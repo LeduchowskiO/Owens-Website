@@ -1,0 +1,324 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>Angular\</SpaRoot>
+    <SpaProxyServerUrl>https://localhost:44427</SpaProxyServerUrl>
+    <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
+    <RootNamespace>Owens_Website</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="$(SpaRoot)**" />
+    <None Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Angular\src\app\services\home.service.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Angular\.angular\cache\14.1.3\angular-webpack\b60ca074a50b6ee45d3cb93b233c0b621aa196b6\0.pack" />
+    <None Include="Angular\.angular\cache\14.1.3\angular-webpack\b60ca074a50b6ee45d3cb93b233c0b621aa196b6\index.pack" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\01012fabcfd64c23d46095adbbea78ac.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\0101f1102eecd8295dc4823507df3f59.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\027620203a1c4cf15415a0db808bcbe6.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\08024d781afa27a10db9c6ecb3c70d3e.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\08527b42750edb8e1d54d725c877558d.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\0afdfc7e882f56f837d16997c036b579.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\0ba15c1ff65430d4fca411da8c25e477.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\0c94c82533ae0c9c272e25363c2b8aa5.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\0e43ac4bd1c4b516a64792bd579cc3d3.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\11d5363807d931d7059e3ceb8234a4d4.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\130228fab496452e16fe0f4d630e0fe0.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\13a77cb9c36e56842f1465eddddf2892.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1440992b43df8d1a8f7020991bc217ef.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\148cb5da461800121a93f852a0d7e6b9.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\14fbae78f41b840d72e079553f2ecbc7.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\16a8df9d875e841e434832a9f1c0205a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\17ce35ab16370e418f222009ccc6455b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1904ce2d7f9f8f42e9c6029ac2f36096.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\199273f2ea08ada2fb9053e13e6c1749.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1a2e0f63c376765d11f9c270de582ae1.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1b3fee82aa2b12ec0b5086420dc85df7.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1b487cf62c5106d9702b34cb8e6e5e48.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1d222a007c31643aa01e6599003af73b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1d62d2bdc1fab682691f3acadfcaac0f.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1d7f169e4b377af2fa4e2692ecb45878.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1da731bd4dc65448581502862b12cc8b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1ed02b156ff11c18cf4a31954933825c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1f246ab1bd0f9d644e9e73dbb939212e.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\1fd18ab52d05d62ef250c6e1de6466a0.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\20e1cf2cde20d704e379fadadf9a6c60.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\21d71b1da73af3151a2de31b3589fa66.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\2275fb6387070109019ba3abb8eb3ecc.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\2291d27ad8561249080f016d1c8e9315.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\24593d3c3a176a12bd02e8ac6d88a98c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\253bd24599d61d11fe151be902d09044.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\2652ff74c329ccc14d07db3a8fe428be.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\26f02b5f8ccb3de94eaa36cacbade7c6.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\276c6a430545cfa6fecaaafd249176b8.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\27e72d0c147ea39723b2c83b40f73244.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\280b052ea9ed711ec1223b6a7e3cc26c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\285b12c4edac5b8060d3eec57c0a92ee.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\2b9e549901b322edc927613c58de9a14.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\2f563e3afd48426a893b2502077494f4.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\2ffde6383cbe2457d4ff59f600074d09.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\308e16b48d7aef8dd73c0d2e7fa2aa54.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\30e1c58d1b07003ba3532c50a469e810.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\32feedd17105b53674ed091137aa4f6a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3368afc9e51214cbe2401581d45eb258.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\33d2e57499e06c2a57662dab7a919665.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3502ab69b2deb6f531ace88cac1ce777.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\360777ed3dde1886d90a179756ebd63b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\36412c8276a8050ce63e32a03cea2869.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3706c61101366dddda2bb7976fed688b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3b998ee8140fdde38d2af8a02d5f62e9.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3c5a166037f98260c99a64d8e3a15606.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3c875f7a29022b6e602d9ec4e48818b9.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3c98e0cdadbcee99eeb09a07f91afe40.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3d43d43e2cc9c268d6d8e3977c6df0d2.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3ead377025d6a2736d89100854aa6e8c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3f67fcc2585fa3e9b9210e6a4514b919.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\3fc2cd9b48d6cd0596c5f90b17f6d761.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\403c460d0fc254d2acbdab7de12fd6c9.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\40407a63e7febf51c336f6284bc0cfda.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\415c7c82e4cccf8de6ab1df6c6ec1b7b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\43a4b1ab96a28f9b4cb13575d70514fb.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\44c3440ae21a137bb9bd8d42577e8577.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\456a601291f1c7cfd702ded14649d0c0.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\4672d5ba6ed8a48d208ce271b3131f84.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\471c47d7cd94aadafeaf3eb8248f311b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\48a08c70508c27779bbb6b8559940a75.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\491f575f5496e4b5c4c89126bddbb515.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\4a4ec7e59306ea02f23e5239e59f0cfb.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\4a90c4b14625b070944ef04efc03cabc.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\4c36ac2473d2d7b20477dfaef02a9dfc.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\4d44376d486fb4dfd2318817454c48c1.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\4d674c993259a2690fea8a268fa6508c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\4da1a5e4255fc38a8b7f230581e549cd.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\4e03d259ef279ae6bde606d8e76a64cd.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\4eb446706ec710142a2d38ac5e817c5f.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\4f51f634ca23ceb1784ab748003df9a9.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\503f867882bacab5bf964818fcd9fd2e.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\517a6bfca11bbd8bcce4a33f1b0734d5.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\521b3ff3a1016aa9daeb93e37c2b8d8a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\53504ade8427bb68ff5c16b4683dac89.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5513aa58164dc5fabef22c72cb938907.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\585a4eb8888e430a35ee363e420360fc.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\597df576b27eec2f78b1c84552af4129.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5b79268cd9dd5a3a6d6947411758ec1e.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5bf83554913fb7b66c21bd5b14119973.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5c3300c60ce3fc76f8100b5a1834b02b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5c66a766bf204c2ad43b4cffd5f4884f.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5c89fc35c5b20a7abcadb7e0386a1858.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5cdcb0e50af8361706763eede72a10cf.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5cf54e474a431930e76a325dbb9aac96.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5d40b351be2e611aed907efe71aff1fc.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5de8b075ce1ca03c53e0d9b4de948c01.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5f42bcc3f0434c49989da1ed2174058c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\5fa97d9a7c6e69cf51a0d7c82c633575.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6004a2a209375663e5ca944eb83a5a25.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6050c54739a8a6f0a3dd91f1b34a9c9a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6463cc1ff6d3c6dbbe65cd74c3cdd542.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\656aebeaad99e3a5c701e3479e6b3693.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\683c31cc599832be75df1ce13c5ced0b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6857c943a747175ed5b12fe9a66cf090.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\693d65d3ebd09ce11750187843d9444d.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6948d63a048c516028b54f575fe55643.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\696edc8ab2cb650fab72f4e818548faa.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6a99f666d0b2cb1c2d0afadd0eb1abff.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6ab4a60be80bb07d443ee152d36c6ba7.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6b1d4c984d215b0d5688f4dccab130df.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6d3c858048f0b12b967cc00d275640bc.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6d54223d201d3d952e976d80470f4796.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6d8fddbbe4f52afcee3705da1c31a392.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6e5cd1e739802bbbcc144fc68df6b04e.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6e711395da41acafde7ca70d4f51aafa.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6e8bba562e915547746db25e3e8974b4.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\6f5f580026c1d7681efa39a203ad29f9.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7004fc5c981604b4e7434eac2e1b1b73.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7054abc56daf0e54d5dc4b355abb328e.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\70a52d71f419567b6f1125d478eae9b0.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\73b18c9c4218c0f15a0fac0d9282734c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\757bf6d3d88efd72767cedd39ef1a811.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\75fe50582ed9eec5f115eb00a18a229e.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\76598e08ca2daf8092d0333b9386d94b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\76eb7fc828ba1df952f675d22725a886.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7874f51c31a6cdc7b8bb732ebe0ebb3e.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\79a501c63d3076aa052333353cb922e1.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7ae80b333db1f7bfcbc6488226ba8e00.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7b4e018d098d1d1392dc8df2157340b3.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7cdbc45188c870eae2c96e3e975e7dc4.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7d4bc4c8571c697fdaa469a2b99726f2.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7dfba97f44828619cdcb08a3bbc7da8f.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7e36a6700e2c3818bd78077320a767fe.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7f9552d1fde29fb1de6f11c325d1694c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\7ff1fcd95eab4906e9dc34572ca15cb4.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\815ad49d6d1c9580a2f65fc173e572fb.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\81a6fead3de4f4c7fd466bddd880ab19.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\826102ce8704c6b3f70ee674cd8f3412.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\83fbf30468de2410c5402d0519a71f1b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\842958e5e601aefb6bcf0207d6258659.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\85cd4b7b0aff296049f15b6333902dfc.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\87fa98081aee2b9c5338d3fdf400064a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\87ffea548e8bf879171721184ebc75ef.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\887778d65966afcd4039fbe6e495e1ec.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\88febd16dda1c01b6c37b1272ece36bd.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\89557a57bd8cf30261716886aa8adab6.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\8981fba6b20df46f6093352854adb4b0.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\8a02c163ea6440011f89d1eebad72eae.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\8aac783dbe7eb28fb86cda4bc182b7ef.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\8baf3853e8f32a59393653b0423f8f2d.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\8bbebcb759804b77abfd5ada646c6281.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\8c343176126ddeef859614b93dcfac7f.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\8cf94353bda13b57231eab9b7d16b670.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\921904da23405c40f93a2fb9bcdb3155.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\93aaf51191054d4f1535a11dee6b061a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\93c5aa3567a7570328b0ab68fa396f64.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\946c8d39de591213a19bb2b24ebb7155.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\9472d88eda959474f1e8961300317a55.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\94adb6597bd23c5e6d34206bd65d42cd.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\95dd2521bf888a5badf94f9402ecf2d3.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\98d4cac2f2c53de92c5f6c3282661f37.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\98e88838f8b0ded518e04ba2cc2dae5a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\99cccb35b522276efac5fe38104e5359.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\9aa884436a5d2b99479bb8884112906e.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\9bec885ac50b9d50c2545423a7abd33e.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\9c88828b3bf47aa967fa71a3dad7ab89.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a19472472eea99a50081e77430034949.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a47a26d41d18c0bef963f5d0d5a882f8.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a544c452106777c25972c6ad7a1362ca.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a5c113b17a5fc8c6f245ce56f9d9f5f9.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a6386541757c40a6db599f27b35349d0.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a662fdb8b5bdb8341c3b7329784cbc8d.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a67281f7eb68ed36a1658bb77cf76208.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a6b304c83d558f3344b9f3e43b6b2d46.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a7770fe3539a849c16d61e2434dae4a6.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a7a1584f21a5ec2b85f9a0868df73792.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\a945918c3b6106b765ba7aa33d8d4be7.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\ab803d9bd1b37baab3c66ec50730e9dd.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\acea8e6cc0cf085d07a676a3619e167c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\ad123132932d5f1e09381fe103da88b8.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\af73bf5af7e1aaaed07760b33d92696f.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\af892086e3231badb6e10f1551ddea8a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\b0f63c211d3eb21dfe921ef2263fef4f.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\b27417eec13294f0b14576a1d57f4218.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\b30d25c33191bba893840566581876f6.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\b56617b1866803ed5f1aa0260a975759.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\b7ae8232a50e4cd876714731738598e4.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\b82d890811bcce540186fed2d7dfe918.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\b8d85b9822e3502a2a8b5940d91e580d.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\ba470f40efb69915abcdd80c22a99639.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\ba9739672390ef44b5f345f9bdbb3caa.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\bc3605c98eca3232458618d17ff31d7d.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\bc7083c8616d8aa8b3e909ec7d057881.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\bcd9b592d5417acbbfb32e272f1611f1.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\bd4edef6eba51c249f7a68dcee368d1f.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\be0595a6d3ba9a9abf22d63c0cb9fe87.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\be214e9a57704964e4233bac6c189633.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\bf19b842ecd89c8e34d0a51425e3e850.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\bfbe8e3789f7421f0cb3bc2e9dd79cf9.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\c0ca03d4355c0e7d7c6e0c2e3b28517a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\c2803424706045ead7abdca73f05a119.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\c31018c099d48ca2cab16a20a1508e06.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\c421f7b4bf1d8a3a60bb328763c30ac7.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\c4de65449fcf00cbf456375bd7988f8b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\c58e697048bca258495e630c8ba54e1c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\c58efef203bad4b07c7d6745d2ed01ba.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\cb4757e36ffd9b20eeb96bc61e8a885b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\cb659222e7293afcf795f4683384e208.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\cc4bdc85aa74b9e058ae0be5bafc4555.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\cc7b0b941345a01d0ebdb16a49502e43.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\cda73433f31db056f9b350731316f062.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\ce31e2bf8ad39dc08497d6f63a52abd6.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\cfc527a225a438bb605c3c2366579b04.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\d096a6948019d848221a57cc2ca718b8.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\d2e67d42e0e7e0ff6b5444abc92af42b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\d4272463aa52fbf117e285b165a7e47f.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\d544d33e029d0179e74aecd596de6fe3.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\d62f48ea50cdebfdcede8a9962ca2ef5.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\d6cbb662547137eeb85328ff09685d71.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\d935850141c316931df2ac44b86c31ff.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\da18c74968dc11422a73607ea8226846.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\dab42ce713e91cf677e724a149129a4b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\db06ac5338ec2a253acd17fe068c362a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\db2224077bf80cce61ef4feefe5ad2a3.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\df718d0004ccea88098458064a3324fc.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e06d602aaa5626360ba56eed50f7fac6.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e2a4785a8701366c2c1ac9b915677d33.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e3483fc308b78f9df53fbb1a905c61e1.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e4e826040d12e9da12e0992e107a50be.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e54f1963d82127815aa13a9b7c26268a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e78232aa259e68f456a2867454ecab69.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e793fa29d1d1e6d528a9733376d90831.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e79400142b709a5287a4d0694d77e5e2.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e7c9fe4dd6728683a666e5ff70c1a5d5.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e9662adc5985832b773b61ecf983da5a.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\e9778f8995fba8f33c14a768e0d1a19d.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\ebc5647f8dcbbbeacc73fa5ba8dd48e6.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\ec570af8eb45546a69ebf8e3e1ff6430.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\ede7366508e3520b26ae1b730e2a09c4.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f0de8e36189a883e9bb76f7ffef1ce90.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f1732b29a47a2ff201b764241d01cb86.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f373b369b88f05d0728eff0044839d14.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f3c6ae975443625cb2951bd03b203c83.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f469402c0ea04954ad7519c236c32940.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f547d9568b76680e93cf7f42cc3ee77d.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f7ac0f35c739022bfcf1aeb8eabc5113.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f7c358c6fc5830ae591e6ab9ff4e6bce.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f7d9afe776a06ec7e02a7ef9259443a7.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f88c3b6b419a47a46d5880b39949219c.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f913523413e53e1b5137ed3d4725b000.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\f95f0408f0d52ff40d0f39fd519bf411.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\fabf584b5fb27b215457b2e3f30a6bb4.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\fad558f5d332aa1855e4b03d5306a805.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\fdb7c6f72637b2f64d50b88b58457c7b.json" />
+    <None Include="Angular\.angular\cache\14.1.3\babel-webpack\ff5ac3e0b50086e8897f0f2861ff9756.json" />
+    <None Include="Angular\angular.json" />
+    <None Include="Angular\package-lock.json" />
+    <None Include="Angular\package.json" />
+    <None Include="Angular\tsconfig.app.json" />
+    <None Include="Angular\tsconfig.json" />
+    <None Include="Angular\tsconfig.spec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Angular\src\app\services\home.service.ts" />
+  </ItemGroup>
+
+    <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+  
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --configuration production" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>wwwroot\%(RecursiveDir)%(FileName)%(Extension)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+</Project>
