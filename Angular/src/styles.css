@@ -2,7 +2,7 @@
 
 /* Provide sufficient contrast against white background */
 body {
-  background-color: #1f0838;
+  background-image: url(../../Assets/bg.png);
   color: silver;
 }
 
